@@ -8,6 +8,9 @@ class DataBinding extends Component
 {
 
     public $name = 'test';
+    public $age = 22;
+    public $show = false;
+    public $select = 'PHP';
 
     public function render()
     {
