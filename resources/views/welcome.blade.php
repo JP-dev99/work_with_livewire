@@ -6,8 +6,9 @@
     @livewireStyles
 
 <body>
-    @livewire('hello-world')
-    @livewire('data-binding')
+    {{--@livewire('hello-world')--}}
+    {{--@livewire('data-binding')--}}
+    @livewire('actions')
 
     @livewireScripts
 </body>
