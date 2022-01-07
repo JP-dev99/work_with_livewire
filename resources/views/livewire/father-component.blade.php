@@ -8,6 +8,6 @@
 
         <hr>
 
-        <button wire:click='$refresh'>Refresh Component pai </button> : {{now()}}
-        <button wire:click='atualizaFilho'> Refresh Componentes filhos </button> : {{now()}}
+        <button wire:click='$refresh'>Refresh father Component  </button> : {{now()}} <br>
+        <button wire:click='updateSon'> Refresh all Components </button> : {{now()}}
 </div>

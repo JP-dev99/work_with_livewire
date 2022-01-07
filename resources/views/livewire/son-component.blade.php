@@ -1,5 +1,5 @@
 <div>
    {{$user->name}}  : {{now()}}
 
-    <button wire:click='$refresh'>Refresh</button>
+    <button wire:click='updateFather'>Refresh</button>
 </div>
