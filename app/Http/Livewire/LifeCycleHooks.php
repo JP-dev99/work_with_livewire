@@ -19,7 +19,7 @@ class LifeCycleHooks extends Component
     //public $requestParam = '';
     //public $users = User::all();
 
-    public function mount(request $request) //É EXECUTADO TODA VEZ QUE O COMPONENTE É MONTADO
+    public function mount(request $request) //É EXECUTADO TODA VEZ QUE O COMPONENTE É MONTADO, SÓ CONSEGUIMOS EDITAR A REQUEST ATRAVÉS DO MOUNT, DEPOIS TODAS AS REQUISIÇÕES SÃO FEIAS VIA AJAX
     {
         $this->name = 'João';
         $this->lastName = 'Sena';

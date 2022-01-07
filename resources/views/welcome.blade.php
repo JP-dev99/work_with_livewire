@@ -9,8 +9,9 @@
     {{--@livewire('hello-world')--}}
     {{--@livewire('data-binding')--}}
     {{--@livewire('actions')--}}
+    {{--@livewire('life-cycle-hooks')--}}
 
-    @livewire('life-cycle-hooks')
+    @livewire('father-component')
 
     @livewireScripts
 </body>

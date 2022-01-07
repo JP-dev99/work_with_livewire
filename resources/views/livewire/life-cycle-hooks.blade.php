@@ -13,12 +13,18 @@
     @if($updating) updating - {{ $updating }} @endif <br>
     @if($newUpdatedName) property name - {{ $newUpdatedName }} @endif
 
-    {{-- The request param is {{$requestParam}} --}}
+    {{-- The request param is {{ $requestParam }} --}}
 
     {{--
     <h2>Lista de usuários</h2>
-
     @if($users)
-
+        <ul>
+        @foreach($users as $user)
+            <li>{{ $user->name }}</li>
+        @endforeach
+        </ul>
+    @else
+        Nenhum usuário registrado...
+    @endif
     --}}
 </div>
