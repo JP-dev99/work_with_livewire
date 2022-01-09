@@ -4,11 +4,12 @@ namespace App\Http\Livewire;
 
 use App\Models\User;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class FatherComponent extends Component
 {
-    public $users = ['Larissa', 'Botelho', 'moraes'];
-    
+    use WithPagination;
+
     protected $listeners = ['geral' => '$refresh'];
 
     public function mount()
@@ -32,6 +33,8 @@ class FatherComponent extends Component
 
     public function render()
     {
-        return view('livewire.father-component');
+        return view('livewire.father-component', [
+            'user' => User::paginate(5)
+        ]);
     }
 }

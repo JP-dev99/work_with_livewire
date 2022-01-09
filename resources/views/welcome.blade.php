@@ -10,8 +10,10 @@
     {{--@livewire('data-binding')--}}
     {{--@livewire('actions')--}}
     {{--@livewire('life-cycle-hooks')--}}
+    {{--@livewire('father-component')--}}
+    {{--@livewire('images-test')--}}
 
-    @livewire('father-component')
+    @livewire('names')
 
     @livewireScripts
 </body>

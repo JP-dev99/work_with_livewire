@@ -5,7 +5,7 @@
         {{-- <button wire:click="removeUser('{{$user->id}}')"> Remove </button> --}}
     </div>
     @endforeach
-
+            {{ $users->links() }}
         <hr>
 
         <button wire:click='$refresh'>Refresh father Component  </button> : {{now()}} <br>
